@@ -37,6 +37,11 @@ pessoa = {
 print(pessoa, type(pessoa))
 print(pessoa['nome'])
 
+del pessoa['sobrenome']
+
+if pessoa.get('sobrenome') : #tenta pegar a chave, caso não encontre retorna None
+    print(pessoa.get('sobrenome'))
+
 for chave in pessoa:
     print(chave, pessoa[chave])
 
