@@ -8,7 +8,7 @@ for item in lista:
     if isinstance(item, set):
         item.add(5)
 
-    if isinstance(item, (int, float))
+    if isinstance(item, (int, float)):
         print(item, item * 2)
     print(item, isinstance(item, set))
 

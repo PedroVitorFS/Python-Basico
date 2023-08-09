@@ -31,7 +31,6 @@ s1.update(('Ola mundo',1,2,3,4))
 s1.discard('Ola mundo')
 print(s1)
 
-
 s1 = {1,2,3}
 s2 = {2,3,4}
 s3 = s1 | s2 #une os dois sets

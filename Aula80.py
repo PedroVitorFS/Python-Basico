@@ -24,16 +24,15 @@ lista_de_listas_de_inteiros = [
 ]
 
 
-for lista in lista_de_listas_de_inteiros:
-    duplicado = -1
-    for pos,numero in enumerate(lista):
+def encontra_primeiro_duplicado(lista_de_inteiros):
+    numeros_checados = set()
+    primeiro_duplicado = -1
+
+    for numero in lista_de_inteiros:
+        if numero in numeros_checados:
+            primeiro_duplicado = numero
+            break
+
+        numeros_checados.add(numero)
         
-        if numero in lista[pos + 1:] :
-            duplicado += 1
-
-        if duplicado == 0:
-            print(lista, numero)
-            break 
-
-    if(duplicado == -1):
-        print(lista, duplicado)
+    return primeiro_duplicado

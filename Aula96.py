@@ -15,7 +15,7 @@
 
 import sys 
 from sys import exit, platform #importa
-from sys import platform as p #apelido para variavel
+from sys import platform as p #apelido para variável
 import sys as s #apelido do modulo
 
 print(sys.platform)

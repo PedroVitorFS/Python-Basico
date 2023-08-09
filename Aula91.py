@@ -1,6 +1,6 @@
 # Introducao as Generator functions em Python
 # generator = (n fon n in range(1000000))
-
+"""
 def generator(n=0):
     yield 1 # Pausar
     print('Continuando...')
@@ -18,6 +18,7 @@ print(next(gen)) #ira continuar o codigo
 
 for n in gen:
     print(n)
+"""
 
 def generator(n=0, maximum=10):
     while True:

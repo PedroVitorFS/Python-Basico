@@ -1,6 +1,5 @@
-#List comprehension em Python
-#List comprehension e uma forma rápida ara criar listas
-#a partir de iteráveis
+# List comprehension em Python
+# List comprehension é uma forma rápida ara criar listas a partir de iteráveis.
 
 lista = []
 for numero in range(10):
@@ -8,23 +7,24 @@ for numero in range(10):
 
 
 lista = [
-    numero * 2
+    (numero * 2)
     for numero in range(10)
 ]
 
+#print(list(range(10)))
 #print(lista)
 
+# Mapeamento de dados em list comprehension
 produtos = [
     {'nome' : 'p1', 'preco' : 20},
     {'nome' : 'p2', 'preco' : 10},
     {'nome' : 'p3', 'preco' : 30},
 ]
-
 novos_produtos = [
-    {**produto,'preco': produto['preco'] * 10}
-    if produto['preco'] > 20 else {**produto}
+    {**produto, 'preco': produto['preco'] * 10} #desempacota o preço e altera o valor da chave de preço
+    if produto['preco'] > 20 else {**produto} #multiplica o valor do preço por 10 se o valor for maior que 20
     for produto in produtos
-    if produto['preco'] > 10
+    if produto['preco'] > 10 #não inclui os valores menores que 10 na lista
 ]
 
 print(novos_produtos)

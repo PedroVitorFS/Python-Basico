@@ -3,7 +3,7 @@ args - Argumentos não nomeados
 * - *args (empacotamentos e desempacotamento)
 """
 
-# Lembre-sse de desempacotamento
+# Lembre-sse de d\esempacotamento
 
 x, y, *resto = 1,2,3,4
 print(x, y, resto)

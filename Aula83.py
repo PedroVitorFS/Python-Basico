@@ -1,4 +1,4 @@
-#Empacotamento e desempacotamento de dicionarios
+#Empacotamento e desempacotamento de dicionários
 
 a,b =1,2
 a,b = b,a
@@ -9,8 +9,8 @@ pessoa = {
 }
 
 (a1,a2), (b1,b2) = pessoa.items()
-print(a1,a2)
-print(b1,b2)
+#print(a1,a2)
+#print(b1,b2)
 
 
 pessoa = {
@@ -36,6 +36,6 @@ def mostro_argumentos_nomeados(*args, **kwargs):
         print(chave,valor)
 
 mostro_argumentos_nomeados(1,2,nome='Joana', qlq=123)
-mostro_argumentos_nomeados(**pessoas_completa)
+#mostro_argumentos_nomeados(**pessoas_completa)
 
     

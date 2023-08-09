@@ -1,4 +1,9 @@
-#funcao lambda simples
+#função lambda simples
+
+# A função lambda é uma função como qualquer 
+# outra em Python. Porém, são funções anônimas
+# que contém apenas uma linha. Ou seja,, tudo
+# dever ser contido dentro de um único expressão
 
 lista = [
     {'nome' : 'Luiz', 'sobrenome' : 'miranda'},

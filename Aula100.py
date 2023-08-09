@@ -18,10 +18,9 @@ produtos = [
 # Ordene os produtor por preço crescente (do menor para maior)
 # Gere produtos_ordenados_por_preço por deep copy (cópia profunda)
 
-
 novos_produtos = [
     {**produto, 'preco' : round(produto['preco'] * 1.10, 2)}
-    for produto in produtos
+    for produto in copy.deepcopy(produtos)
 ]
 
 produtos_ordenados_por_nome = copy.deepcopy(novos_produtos)

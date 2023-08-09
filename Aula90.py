@@ -14,7 +14,6 @@ iterator = iter(iterable) #__item__ e __next__
 lista = [n for n in range(1000000)]
 generator = (n for n in range(1000000))
 print(sys.getsizeof(lista))
-print(sys.getsizeof(generator))
-#porem generator nao tem tamanho, nao tem indice
+print(sys.getsizeof(generator)) #porem generator nao tem tamanho, nao tem índice
 for n in generator:
     print(n)

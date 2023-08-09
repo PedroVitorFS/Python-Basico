@@ -1,11 +1,13 @@
 # raise - lançando exceções (erros)
 
+"""
 def divide(n, d):
     try:
         return n / d
     except ZeroDivisionError:
         print('____')
-        raise #relanca o erro
+        raise #relança o erro
+"""
 
 def divide(n, d):
     if d == 0:

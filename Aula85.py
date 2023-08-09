@@ -10,7 +10,7 @@ dc = {
     chave: valor.upper()
     if isinstance(valor, str) else valor
     for chave,valor in produto.items()
-    #if isinstance(valor, float) #so ira ser adicionado tipo float no dict
+    #if isinstance(valor, (int, float)) #so ira ser adicionado tipo int ou float no dict
 }
 
 print(dc)
